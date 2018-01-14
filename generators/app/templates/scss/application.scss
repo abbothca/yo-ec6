@@ -1,0 +1,20 @@
+@import "mixin/fonts";
+
+@import "variables/v-brackpoints";
+@import "variables/v-color";
+@import "variables/v-fonts";
+
+@import "base/b-config";
+@import "base/b-headings";
+@import "base/b-presets";
+
+@import "layout/l-base";
+@import "layout/l-flexbox";
+
+@import "components/c-buttons";
+@import "components/c-tabs";
+
+body{
+	margin: 20px 0;
+	background: #ccc;
+}

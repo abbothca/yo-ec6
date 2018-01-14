@@ -1,0 +1,13 @@
+{
+    "name": "<%= config.moduleName %>",
+    "description": "<%= config.description %>",
+    "main": "index.html",
+    "authors": [
+        "<%= config.author.email %>"
+    ],
+    "license": "<%= config.license %>",
+    "homepage": "",
+    "dependencies": {
+        "normalize-css": "normalize.css#^7.0.0"
+    }
+}
