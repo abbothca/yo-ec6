@@ -8,6 +8,7 @@ First, install [Yeoman](http://yeoman.io) and generator-first using [npm](https:
 ```bash
 npm install -g yo
 ```
+Also, you will need pre-installed globally [bower](https://bower.io/), [webpack](https://webpack.js.org/guides/installation/), [eslint](https://eslint.org/).
 
 On the command line, from the root of your generator project (in the generator-ec6/ folder), type:
 ```bash
