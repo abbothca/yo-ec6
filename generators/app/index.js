@@ -6,7 +6,7 @@ module.exports = class extends Generator {
     constructor(args, opts) {
         super(args, opts);
         // This makes `appname` a required argument.
-        this.argument('appname', {type: String, required: true});
+        this.argument('appname', {type: String, required: false});
         // And you can then access it later; e.g.
         this.log(this.options.appname);
     }
@@ -148,6 +148,16 @@ module.exports = class extends Generator {
         this.fs.copy(
                 this.templatePath('.eslintrc'),
                 this.destinationPath('./.eslintrc'),
+                {config: this.props}
+        );
+        this.fs.copy(
+                this.templatePath('.stylelintrc.json'),
+                this.destinationPath('./.stylelintrc.json'),
+                {config: this.props}
+        );
+        this.fs.copy(
+                this.templatePath('.csscomb.json'),
+                this.destinationPath('./.csscomb.json'),
                 {config: this.props}
         );
         this.fs.copy(
