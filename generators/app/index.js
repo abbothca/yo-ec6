@@ -6,9 +6,9 @@ module.exports = class extends Generator {
     constructor(args, opts) {
         super(args, opts);
         // This makes `appname` a required argument.
-        this.argument('appname', {type: String, required: false});
+//        this.argument('appname', {type: String, required: false});
         // And you can then access it later; e.g.
-        this.log(this.options.appname);
+//        this.log(this.options.appname);
     }
 
 //    installingLodash() {
